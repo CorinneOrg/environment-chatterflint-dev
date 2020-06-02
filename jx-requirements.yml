@@ -2,6 +2,8 @@ autoUpdate:
   enabled: true
   schedule: 0 0 * * *
 bootConfigURL: https://github.com/cloudbees/arcalos-boot-config.git
+buildPacks:
+  buildPackLibrary: {}
 cluster:
   azure: {}
   chartRepository: http://bucketrepo/bucketrepo/charts/
@@ -100,6 +102,6 @@ velero:
   serviceAccount: chatterflint-vo
   ttl: ""
 versionStream:
-  ref: v0.0.445
+  ref: v0.0.466
   url: https://github.com/cloudbees/arcalos-jenkins-x-versions.git
 webhook: lighthouse
